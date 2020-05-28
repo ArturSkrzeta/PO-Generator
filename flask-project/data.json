@@ -1,0 +1,51 @@
+{ "purchase-order":
+    {
+      "po_number": "XXX0001",
+      "currency": "EUR",
+      "vendor":
+      { "Supplier Name": "International Supplier Company GmbH",
+        "Vendor Number": "123456000",
+        "Email": "supplier@mail.com",
+        "Phone": "+48 123 321 123",
+        "Country": "Poland"
+      },
+      "company":
+      { "Company Name": "My Company Poland Sp.z o.o.",
+        "Contact Email": "procurement@mycompany.pl",
+        "Phone": "+48 999 888 777",
+        "Invoice Email": "accounting@mycompany.pl",
+        "Invoice Address": "Small street 99 99-999 Newcity",
+        "Delivery Address": "Big street 11 111-111 Oldcity"
+      },
+      "products": [
+      { "Product ID":"Part0001",
+        "Product Title": "SawX123",
+        "Short Description":"Spare Part for Modern Machine",
+        "Quantity": 2,
+        "Price Each": 200,
+        "Currency":"EUR"
+      },
+      { "Product ID":"Part0002",
+        "Product Title": "SawY122",
+        "Short Description":"Spare Part for Second Machine",
+        "Quantity": 3,
+        "Price Each": 300,
+        "Currency":"EUR"
+      },
+      { "Product ID":"Part0003",
+        "Product Title": "SawY122",
+        "Short Description":"Spare Part for Third Machine",
+        "Quantity": 1,
+        "Price Each": 150,
+        "Currency":"EUR"
+      },
+      { "Product ID":"Part0004",
+        "Product Title": "SawY166",
+        "Short Description":"Spare Part for Second Machine",
+        "Quantity": 1,
+        "Price Each": 150,
+        "Currency":"EUR"
+      }
+    ]
+  }
+}

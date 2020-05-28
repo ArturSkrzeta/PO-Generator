@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title></title>
+
+  </head>
+  <body>
+
+    <div id="container">
+
+      <div id="top-title">
+        <table class="top-title">
+          <tr>
+            <td width="50%" style="font-size:30px;">Purchase Order {{ po_number }}</td>
+            <td width="50%" style="text-align:right;padding-right:10px;font-size:18px;">{{ today }}</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="logo">
+        <p style="margin-left:550px;font-size:40px;">MyCompanyLogo</p>
+      </div>
+
+      <div id="top">
+          <table class="main-table">
+            <tr>
+              <td colspan="2"><h3>Supplier Details:</h3></td>
+            </tr>
+            {% for key in vendor %}
+              <tr>
+                <td width="120px">{{ key }}:</td>
+                <td>{{ vendor[key] }}</td>
+              </tr>
+            {% endfor %}
+          </table>
+      </div>
+
+
+      <div id="middle_first">
+        <table class="main-table">
+          <tr>
+            <td colspan="2"><h3>Company Details:</h3></td>
+          </tr>
+          {% for key in company %}
+            <tr>
+              <td width="120px">{{ key }}:</td>
+              <td>{{ company[key] }}</td>
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+
+
+      <div id="middle_second">
+        <table class="product-table">
+
+          {% for param in products[0] %}
+            <th class="product-table">{{ param }}</th>
+          {% endfor %}
+
+            {% for product in products %}
+            <tr>
+                {% for param in product %}
+                <td>{{ product[param] }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+
+        </table>
+        <p style="margin-left:700px;"><b>Total: {{ total }} {{ currency }}</b></p>
+      </div>
+
+
+      <div id="bottom">
+        <p class='bottom-info'>
+          THE ORDER SHALL BE GOVERNED BY THE GENERAL PURCHASING CONDITIONS OF {{ company['Company Name'] }}</br> AS ATTACHED HERETO, TO THE EXCLUSION OF THE GENERAL TERMS OF THE SUPPLIER.
+        </p>
+        <ol style="font-size:14px;">
+            <li>All shipments, correspondence and invoice must show purchase order number.</li>
+            <li>Enter this order in accordance with the prices, terms, delivery method, and specifications listed above.</li>
+            <li>Please notify us promptly if you are unable to ship as specified.</li>
+        </ol>
+      </div>
+
+      <div id="signature">
+        <p style="margin-left:650px;">..........................................................</p>
+        <p style="margin-left:740px; font-size:14px">signature</p>
+      </div>
+
+    </div>
+
+  </body>
+</html>

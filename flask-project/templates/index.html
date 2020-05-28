@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <title>
+    </title>
+  </head>
+  <body>
+    <div id="home">
+      <h3>MyCompanyLogo</h3>
+      <h1>Welcome to the Purchase Order Generator</h1>
+      <h3>Click on Generate button to print your Purchcase Order</h3>
+      <form action="{{ url_for('pdf_template') }}">
+        <input type="submit" value="Generate">
+      </form>
+
+    </div>
+  </body>
+</html>s
