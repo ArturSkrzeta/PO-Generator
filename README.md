@@ -12,4 +12,4 @@
 <img src="images/po_generator.JPG">
 
 <p>PO printed in PDF format:</p>
-<img src="images/po_pdf.JPG" width="650" height="800">
+<img src="images/po_pdf.JPG" width="700" height="800">
