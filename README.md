@@ -1,4 +1,5 @@
-<p>Application description:</p>
+<h2>Flask Application</h2>
+<h3>Intro</h3>
 <ul>
   <li>Flask framework applied</li>
   <li>Data input: JSON file that stores product's data</li>
@@ -7,7 +8,7 @@
   <li>In procurement, PDF file is the final file being sent over to a supplier to fulfil the order.</li>
 </ul>
 
-
+<h3>Demo</h3>
 <p>Data input: JSON file:</p>
 <img src="images/json.JPG">
 
